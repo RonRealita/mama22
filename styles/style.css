@@ -1,1058 +1,607 @@
-/* =========================================================
-   GLOBAL
-   ========================================================= */
-
 * {
+
   box-sizing: border-box;
-}
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
 }
 
 body {
+
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+
+  margin: 0;
+
 }
 
-
-/* =========================================================
-   LOGIN PAGE
-   ========================================================= */
+/* Login page styles */
 
 .login_container {
-  width: 100%;
-  min-height: 100vh;
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
 
-  padding: 20px;
+  height: 100vh;
+
+  width: 100vw;
+
 }
 
 .login_form {
-  width: 400px;
-  min-height: 300px;
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
 
-  padding: 25px;
+  width: 400px;
+
+  height: 300px;
 
   border: 1px solid #ccc;
+
   border-radius: 20px;
 
-  box-sizing: border-box;
 }
 
 input[type="text"],
+
 input[type="password"] {
+
   width: 300px;
+
   height: 40px;
 
-  margin-bottom: 10px;
-  padding: 0 10px;
-
   border: 1px solid #ccc;
+
   border-radius: 5px;
 
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  margin-bottom: 10px;
+
+  padding-left: 10px;
+
 }
 
 input[type="text"]:focus,
+
 input[type="password"]:focus {
+
   outline: none;
+
   border: 2px solid #000;
+
 }
 
 button[type="submit"] {
+
   width: 300px;
+
   height: 40px;
 
   border: none;
+
   border-radius: 5px;
 
   background-color: #000;
+
   color: #fff;
 
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
+
   font-weight: 600;
 
   cursor: pointer;
 
-  transition: all 0.2s ease;
 }
 
 button[type="submit"]:hover {
+
   background-color: #fff;
+
   color: #000;
+
   border: 2px solid #000;
+
 }
 
 .login_description {
-  max-width: 320px;
 
-  margin: 10px 0;
-  padding: 0 10px;
+  font-size: 14px;
 
   color: #ccc;
 
-  font-size: 14px;
+  margin: 10px 0;
+
+  padding: 0 10px;
+
   text-align: center;
-  line-height: 1.5;
+
 }
 
-
-/* =========================================================
-   BIRTHDAY PAGE
-   ========================================================= */
+/* Birtday page styles */
 
 .song {
+
   visibility: hidden;
+
 }
 
 .container {
-  position: relative;
 
-  width: 100%;
   height: 100vh;
 
   margin: 0 auto;
 
   overflow: hidden;
 
+  position: relative;
+
   text-align: center;
 
   visibility: hidden;
+
+  width: 100vw;
+
 }
 
 .container > div {
-  position: absolute;
 
-  top: 20vh;
   left: 0;
+
   right: 0;
 
-  width: 100%;
+  top: 20vh;
+
+  position: absolute;
+
 }
-
-
-/* =========================================================
-   SECTION ONE
-   ========================================================= */
 
 .one {
-  font-size: 4.5rem;
-  line-height: 1.2;
-}
 
-.one h1 {
-  margin: 0;
-  padding: 0 20px;
+  font-size: 4.5rem;
+
 }
 
 .two {
-  max-width: 800px;
-
-  margin: 20px auto 0;
-  padding: 0 20px;
 
   font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.6;
+
+  font-weight: lighter;
+
 }
-
-
-/* =========================================================
-   SECTION THREE
-   ========================================================= */
 
 .three {
-  padding: 0 20px;
 
   font-size: 3rem;
-  line-height: 1.3;
-}
 
-
-/* =========================================================
-   SECTION FOUR - CHATBOX
-   ========================================================= */
-
-.four {
-  padding: 0 20px;
 }
 
 .four .text-box {
-  position: relative;
-
-  width: min(600px, 100%);
-  min-height: 120px;
-
-  margin: 0 auto;
-  padding: 15px 18px;
 
   border: 2px solid #ccc;
+
   border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.95);
+  margin: 0 auto;
+
+  padding: 10px;
+
+  position: relative;
+
+  width: 600px;
+
 }
 
 .text-box p {
+
   margin: 0;
 
   text-align: left;
 
-  line-height: 1.6;
 }
 
 .text-box span {
+
   visibility: hidden;
+
 }
 
 .text-box .fake-btn {
-  position: absolute;
 
-  right: 5px;
-  bottom: -50px;
-
-  padding: 0.5rem 1rem;
+  background-color: rgb(21, 161, 237);
 
   border-radius: 5px;
 
-  background-color: rgb(21, 161, 237);
+  bottom: -50px;
+
+  right: 5px;
+
+  position: absolute;
+
   color: #fff;
 
-  white-space: nowrap;
-}
+  padding: 0.5rem 1rem;
 
-
-/* =========================================================
-   SECTION FIVE - IDEAS
-   ========================================================= */
-
-.five {
-  padding: 0 20px;
 }
 
 .five p {
+
+  font-size: 2rem;
+
   position: absolute;
 
   left: 0;
+
   right: 0;
 
-  width: 100%;
-  max-width: 900px;
-
-  margin: 0 auto;
-
-  padding: 0 20px;
-
-  font-size: 2rem;
-  line-height: 1.5;
-
-  text-align: center;
 }
 
 .idea-3 strong {
+
+  border-radius: 3px;
+
   display: inline-block;
 
   padding: 3px 5px;
 
-  border-radius: 3px;
 }
 
 .five .idea-5 {
+
   font-size: 4rem;
+
 }
 
 .idea-5 span,
+
 .idea-6 span,
+
 .wish-hbd span {
+
   display: inline-block;
+
 }
 
 .idea-6 span {
+
   font-size: 15rem;
-  line-height: 1;
+
 }
 
-
-/* =========================================================
-   SECTION SIX - PHOTO & WISH
-   ========================================================= */
-
 .six {
+
   position: relative;
 
   top: 10vh;
 
   z-index: 1;
 
-  padding: 0 20px;
 }
 
 .six img {
+
   display: inline-block;
 
-  width: auto;
   height: 350px;
 
-  max-width: 90vw;
-
-  object-fit: cover;
+  max-width: 100%;
 
   border-radius: 14px;
+
 }
 
 .six .hat {
+
   position: absolute;
 
-  left: 50%;
+  left: 41.5%;
+
   top: -35%;
 
   width: 60px;
 
-  transform: translateX(-50%) rotate(14deg);
-}
+  rotate: 14deg;
 
-
-/* =========================================================
-   BALLOONS
-   ========================================================= */
-
-.seven {
-  width: 100%;
-  height: 100vh;
-
-  overflow: hidden;
-}
-
-.ballons {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
 }
 
 .ballons img {
+
   display: inline-block;
 
   position: absolute;
 
-  max-width: 25vw;
-  height: auto;
 }
 
 .ballons img:nth-child(even) {
+
   left: -10%;
+
 }
 
 .ballons img:nth-child(odd) {
+
   right: -10%;
+
 }
 
 .ballons img:nth-child(3n + 0) {
+
   left: 30%;
+
 }
 
+.seven .eight {
 
-/* =========================================================
-   SECTION EIGHT - SVG
-   ========================================================= */
+  height: 100vh;
 
-.eight {
   position: fixed;
 
   top: 0;
-  left: 0;
 
   width: 100vw;
-  height: 100vh;
 
-  pointer-events: none;
 }
 
 .eight svg {
+
+  left: 0;
+
   position: absolute;
 
   top: 0;
-  left: 0;
-
-  width: 25px;
 
   visibility: hidden;
 
+  width: 25px;
+
   z-index: -1;
+
 }
 
 .eight svg:nth-child(1) {
+
   fill: #bd6ecf;
 
   left: 5vw;
+
   top: 7vh;
+
 }
 
 .eight svg:nth-child(2) {
+
   fill: #7dd175;
 
   left: 35vw;
+
   top: 23vh;
+
 }
 
 .eight svg:nth-child(3) {
+
   fill: #349d8b;
 
   left: 23vw;
+
   top: 33vh;
+
 }
 
 .eight svg:nth-child(4) {
+
   fill: #347a9d;
 
   left: 57vw;
+
   top: 43vh;
+
 }
 
 .eight svg:nth-child(5) {
+
   fill: #c66053;
 
   left: 7vw;
+
   top: 68vh;
+
 }
 
 .eight svg:nth-child(6) {
+
   fill: #bfaa40;
 
   left: 77vw;
+
   top: 42vh;
+
 }
 
 .eight svg:nth-child(7) {
+
   fill: #e3bae8;
 
   left: 83vw;
+
   top: 68vh;
+
 }
 
 .eight svg:nth-child(8) {
+
   fill: #8762cb;
 
   left: 37vw;
+
   top: 86vh;
+
 }
 
 .eight svg:nth-child(9) {
+
   fill: #9a90da;
 
   left: 87vw;
+
   top: 94vh;
-}
 
-
-/* =========================================================
-   WISH
-   ========================================================= */
-
-.wish {
-  width: 100%;
-  max-width: 900px;
-
-  margin: 20px auto 0;
-
-  padding: 0 20px;
 }
 
 .wish-hbd {
-  margin: 0;
 
   font-size: 3em;
-  line-height: 1.2;
+
+  margin: 0;
 
   text-transform: uppercase;
+
 }
 
 .wish h5 {
-  margin: 10px 0 0;
 
   font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.5;
-}
 
+  font-weight: lighter;
 
-/* =========================================================
-   SECTION NINE
-   ========================================================= */
+  margin: 10px 0 0;
 
-.nine {
-  width: 100%;
-
-  padding: 0 20px;
 }
 
 .nine p {
-  max-width: 800px;
-
-  margin: 15px auto;
 
   font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.5;
 
-  text-align: center;
+  font-weight: lighter;
+
 }
 
 #replay {
-  position: relative;
 
   cursor: pointer;
 
   z-index: 3;
-}
-
-
-/* =========================================================
-   DESKTOP / LARGE SCREEN
-   ========================================================= */
-
-@media screen and (min-width: 769px) {
-
-  .one {
-    font-size: 4.5rem;
-  }
-
-  .three {
-    font-size: 3rem;
-  }
-
-  .four .text-box {
-    width: 600px;
-  }
-
-  .five p {
-    font-size: 2rem;
-  }
-
-  .six img {
-    height: 350px;
-  }
 
 }
 
+/* Media Queries */
 
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media screen and (max-width: 768px) {
-
-  .one {
-    font-size: clamp(2.2rem, 8vw, 3.5rem);
-  }
-
-  .two {
-    max-width: 600px;
-
-    font-size: clamp(1rem, 3vw, 1.2rem);
-  }
-
-  .three {
-    font-size: clamp(2rem, 7vw, 3rem);
-  }
-
-  .four .text-box {
-    width: min(90%, 550px);
-  }
-
-  .five p {
-    font-size: clamp(1.5rem, 5vw, 2rem);
-  }
-
-  .five .idea-5 {
-    font-size: clamp(2.2rem, 8vw, 4rem);
-  }
-
-  .idea-6 span {
-    font-size: clamp(8rem, 25vw, 12rem);
-  }
-
-  .six img {
-    height: min(350px, 55vw);
-  }
+@media screen and (max-height: 1000px) {
 
   .six .hat {
-    width: 55px;
-  }
 
-  .wish-hbd {
-    font-size: clamp(2rem, 7vw, 3rem);
-  }
+    left: 40%;
 
-  .wish h5 {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-  }
-
-  .nine p {
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
   }
 
 }
 
+@media screen and (max-height: 800px) {
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+  .six .hat {
+
+    left: 37%;
+
+  }
+
+}
+
+@media screen and (max-height: 700px) {
+
+  .six .hat {
+
+    left: 32%;
+
+  }
+
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+
+  .six .hat {
+
+    left: 32%;
+
+  }
+
+}
 
 @media screen and (max-width: 500px) {
 
-  /* ---------- General ---------- */
+  .login_form{
 
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
+    width: 350px;
 
-    overflow-x: hidden;
+    height: 250px;
+
   }
 
   .container {
-    width: 100%;
-    height: 100vh;
 
-    padding: 0;
-
-    overflow: hidden;
-  }
-
-  .container > div {
     width: 100%;
 
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-
-  /* ---------- Login ---------- */
-
-  .login_container {
-    width: 100%;
-    min-height: 100vh;
-
-    padding: 20px;
-  }
-
-  .login_form {
-    width: 100%;
-    max-width: 350px;
-
-    min-height: 250px;
-
-    padding: 20px;
-  }
-
-  input[type="text"],
-  input[type="password"],
-  button[type="submit"] {
-    width: 100%;
-    max-width: 300px;
-  }
-
-
-  /* ---------- Greeting ---------- */
-
-  .one {
-    font-size: clamp(2rem, 9vw, 2.8rem);
-
-    line-height: 1.25;
-  }
-
-  .one h1 {
     padding: 0 10px;
 
-    overflow-wrap: break-word;
-    word-break: normal;
-  }
-
-  .two {
-    width: 100%;
-    max-width: 360px;
-
-    margin-top: 15px;
-
-    padding: 0 5px;
-
-    font-size: clamp(0.85rem, 3.8vw, 1.05rem);
-
-    line-height: 1.6;
-  }
-
-
-  /* ---------- Birthday ---------- */
-
-  .three {
-    padding: 0 10px;
-
-    font-size: clamp(1.7rem, 8vw, 2.5rem);
-
-    line-height: 1.3;
-  }
-
-
-  /* ---------- Chatbox ---------- */
-
-  .four {
-    padding: 0 15px;
   }
 
   .four .text-box {
-    width: 100%;
-    max-width: 370px;
 
-    min-height: 100px;
+    width: 90%;
 
-    padding: 14px;
-
-    border-radius: 16px;
-  }
-
-  .text-box p {
-    font-size: clamp(0.8rem, 3.5vw, 1rem);
-
-    line-height: 1.6;
   }
 
   .text-box .fake-btn {
+
+    bottom: -50px;
+
     right: 5px;
-    bottom: -45px;
 
-    padding: 8px 12px;
-
-    font-size: 0.75rem;
-  }
-
-
-  /* ---------- Ideas ---------- */
-
-  .five {
-    padding: 0 10px;
-  }
-
-  .five p {
-    width: 100%;
-    max-width: 370px;
-
-    padding: 0 10px;
-
-    font-size: clamp(1.15rem, 5vw, 1.6rem);
-
-    line-height: 1.5;
-  }
-
-  .five .idea-5 {
-    font-size: clamp(1.7rem, 7vw, 2.5rem);
-
-    line-height: 1.4;
-  }
-
-  .idea-3 strong {
-    padding: 2px 4px;
   }
 
   .idea-5 span {
-    display: inline-block;
 
-    margin-left: 3px;
+    display: block;
+
   }
 
   .idea-6 span {
-    font-size: clamp(5rem, 25vw, 8rem);
-  }
 
+    font-size: 10rem;
 
-  /* ---------- Photo ---------- */
-
-  .six {
-    top: 8vh;
-
-    padding: 0 10px;
-  }
-
-  .six img {
-    width: min(75vw, 280px);
-    height: min(75vw, 280px);
-
-    max-width: 280px;
-    max-height: 280px;
-
-    object-fit: cover;
-
-    border-radius: 14px;
   }
 
   .six .hat {
-    top: -15%;
 
-    left: 50%;
+    /* top: -20px; */
 
-    width: 48px;
+    width: 50px;
 
-    transform: translateX(-50%) rotate(14deg);
-  }
-
-
-  /* ---------- Wish ---------- */
-
-  .wish {
-    width: 100%;
-    max-width: 370px;
-
-    margin: 15px auto 0;
-
-    padding: 0 10px;
   }
 
   .wish-hbd {
-    font-size: clamp(1.8rem, 9vw, 2.5rem);
 
-    line-height: 1.2;
+    font-size: 2.2em;
+
   }
 
   .wish h5 {
-    margin-top: 8px;
 
-    font-size: clamp(0.8rem, 3.5vw, 1rem);
+    font-size: .8rem;
 
-    line-height: 1.5;
-  }
-
-
-  /* ---------- Balloons ---------- */
-
-  .seven {
-    width: 100%;
-    height: 100vh;
-
-    overflow: hidden;
-  }
-
-  .ballons {
-    width: 100%;
-    height: 100%;
-  }
-
-  .ballons img {
-    max-width: 22vw;
-
-    height: auto;
-  }
-
-  .ballons img:nth-child(even) {
-    left: -15%;
-  }
-
-  .ballons img:nth-child(odd) {
-    right: -15%;
-  }
-
-  .ballons img:nth-child(3n + 0) {
-    left: 25%;
-  }
-
-
-  /* ---------- SVG ---------- */
-
-  .eight {
-    width: 100vw;
-    height: 100vh;
-
-    overflow: hidden;
-  }
-
-  .eight svg {
-    width: 20px;
-  }
-
-
-  /* ---------- Final message ---------- */
-
-  .nine {
-    width: 100%;
-
-    padding: 0 15px;
   }
 
   .nine p {
-    width: 100%;
-    max-width: 360px;
 
-    margin: 12px auto;
-
-    font-size: clamp(0.9rem, 4vw, 1.3rem);
-
-    line-height: 1.6;
-  }
-
-  .last-smile {
-    font-size: 1.8rem !important;
-  }
-}
-
-
-/* =========================================================
-   SMALL PHONE
-   320px - 375px
-   ========================================================= */
-
-@media screen and (max-width: 375px) {
-
-  .one {
-    font-size: 1.9rem;
-  }
-
-  .two {
-    font-size: 0.8rem;
-
-    max-width: 320px;
-  }
-
-  .three {
-    font-size: 1.6rem;
-  }
-
-  .four {
-    padding: 0 10px;
-  }
-
-  .four .text-box {
-    max-width: 330px;
-
-    padding: 12px;
-  }
-
-  .text-box p {
-    font-size: 0.75rem;
-  }
-
-  .text-box .fake-btn {
-    font-size: 0.7rem;
-
-    padding: 7px 10px;
-
-    bottom: -42px;
-  }
-
-  .five p {
-    max-width: 330px;
-
-    font-size: 1.05rem;
-  }
-
-  .five .idea-5 {
     font-size: 1.5rem;
-  }
 
-  .idea-6 span {
-    font-size: 5rem;
-  }
+    font-weight: lighter;
 
-  .six img {
-    width: 210px;
-    height: 210px;
-  }
-
-  .six .hat {
-    width: 42px;
-  }
-
-  .wish {
-    max-width: 330px;
-  }
-
-  .wish-hbd {
-    font-size: 1.8rem;
-  }
-
-  .wish h5 {
-    font-size: 0.75rem;
-  }
-
-  .nine p {
-    font-size: 0.8rem;
-  }
-}
-
-
-/* =========================================================
-   SHORT SCREEN
-   Supaya tidak terlalu mepet pada HP dengan tinggi kecil
-   ========================================================= */
-
-@media screen and (max-height: 700px) and (max-width: 500px) {
-
-  .container > div {
-    top: 15vh;
-  }
-
-  .six {
-    top: 5vh;
-  }
-
-  .six img {
-    width: 190px;
-    height: 190px;
-  }
-
-  .wish {
-    margin-top: 10px;
-  }
-
-  .wish-hbd {
-    font-size: 1.7rem;
-  }
-
-  .wish h5 {
-    font-size: 0.7rem;
-  }
-
-}
-
-
-/* =========================================================
-   VERY SHORT PHONE
-   ========================================================= */
-
-@media screen and (max-height: 600px) and (max-width: 500px) {
-
-  .container > div {
-    top: 10vh;
-  }
-
-  .six {
-    top: 2vh;
-  }
-
-  .six img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .wish-hbd {
-    font-size: 1.5rem;
-  }
-
-  .wish h5 {
-    font-size: 0.65rem;
   }
 
 }
